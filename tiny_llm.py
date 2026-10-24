@@ -36,14 +36,11 @@ Usage:
 from __future__ import annotations
 
 import json
-import re
 import time
 import uuid
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import (
     Any,
-    AsyncGenerator,
-    Callable,
     Iterator,
     Literal,
     Protocol,
@@ -998,7 +995,7 @@ class LLM:
                     usage=result.usage,
                 )
                 return
-            except Exception as exc:
+            except Exception:
                 if attempt < self.max_retries:
                     wait = self.backoff_factor ** attempt
                     time.sleep(wait)

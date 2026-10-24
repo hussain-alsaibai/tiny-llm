@@ -1,5 +1,4 @@
 """Tests for tiny-llm — public API surface, no API keys needed."""
-import pytest
 from tiny_llm import LLM, _detect_provider
 
 
