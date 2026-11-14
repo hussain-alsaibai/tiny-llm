@@ -8,7 +8,8 @@ function calling, and model routing — all in one MIT-licensed file you can cop
 anywhere.
 
 ```bash
-pip install tiny-llm
+# From GitHub (recommended -- not yet on PyPI)
+pip install git+https://github.com/hussain-alsaibai/tiny-llm.git
 # or: copy tiny_llm.py into your project (MIT licensed)
 ```
 
