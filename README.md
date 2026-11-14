@@ -205,7 +205,8 @@ Add custom pricing by modifying the `COST_PER_MILLION` dict.
 ## Installation
 
 ```bash
-pip install tiny-llm
+# From GitHub (recommended -- not yet on PyPI)
+pip install git+https://github.com/hussain-alsaibai/tiny-llm.git
 ```
 
 Or copy `tiny_llm.py` directly — it's MIT licensed and has no dependencies.
